@@ -4,3 +4,6 @@ The purpose of this project is to get familiar with the terminal, shell, the com
 
 ## pwd
 This command stands for Print Working Directory and outputs to the terminal the current working directory you're in
+
+## ls
+This command lists the contents of the current working directory
