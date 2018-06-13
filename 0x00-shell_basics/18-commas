@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -am
+echo -e $(ls -am)"\n"
