@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "$(ls -amF)\n"
+ls -pamv
