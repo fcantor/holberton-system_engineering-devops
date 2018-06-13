@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -amF
+echo -e "$(ls -amF)\n"
