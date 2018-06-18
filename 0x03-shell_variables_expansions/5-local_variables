@@ -1,2 +1,2 @@
 #!/bin/bash
-( set -o posix ; set ) | less
+( set -o posix ; set )
