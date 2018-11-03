@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# displays 'Holberton School' 10 times
+
+until (( i == 10)); do
+      echo "Holberton School"
+      (( i += 1 ))
+done
