@@ -1,12 +1,12 @@
-#!/usr/bin/ env bash
+#!/usr/bin/env bash
 # displays 'Holberton School' 10 times; 'Hi' after 9th iteration
 
 while (( i < 10 ))
 do
-    if (( i == 9 ))
-    then
-	echo "Hi"
-    fi
-echo "Holberton School"
-(( i += 1 ))
+	if (( i == 9 ))
+	then
+		echo "Hi"
+    	fi
+	echo "Holberton School"
+	(( i += 1 ))
 done
