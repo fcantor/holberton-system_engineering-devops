@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# displays the content of /etc/passwd in a narrative
+
+while IFS=":" read uname pass uid gid uidinfo home shell
+do
+	echo "The user $uname is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $pass, more info about the user here: $uidinfo"
+done < /etc/passwd
