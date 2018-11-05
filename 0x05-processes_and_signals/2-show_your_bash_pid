@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# displays currently running processes of bash in user-oriented format
+ps -axuf | grep bash
+# shellcheck disable=SC2009
