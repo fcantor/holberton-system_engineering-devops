@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# script that creates a file, displays text indefinitely, and catches signals
+
+function remove_kill {
+    rm -f /var/run/holbertonscript.pid
+    exit
+}
+
+echo $$ > /var/run/holbertonscript.pid
+trap 'echo "I hate the kill command"; remove_kill' SIGTERM
+trap 'echo "Y U no love me?!"; remove_kill' SIGINT
+trap 'remove_kill' SIGQUIT
+
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 3
+done
