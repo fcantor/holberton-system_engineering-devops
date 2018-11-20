@@ -13,20 +13,15 @@ This project introduces the use and mastery of Regular Expression in Ruby
 ---
 File | Task
 ---|---
-0-simply_match_holberton.rb | A Ruby script that accepts one argument and passes it to a regular expression matching method
-![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/just-match-Holberton.png)
+0-simply_match_holberton.rb | A Ruby script that accepts one argument and passes it to a regular expression matching method ![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/just-match-Holberton.png)
 1-repetition_token_0.rb | A Ruby script that accepts one argument and passes it to a \
-regular expression matching method
-![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-0.png)
+regular expression matching method ![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-0.png)
 2-repetition_token_1.rb | A Ruby script that accepts one argument and passes it to a \
-regular expression matching method
-![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-1.png)
+regular expression matching method ![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-1.png)
 3-repetition_token_2.rb | A Ruby script that accepts one argument and passes it to a \
-regular expression matching method
-![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-2.png)
+regular expression matching method ![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-2.png)
 4-repetition_token_3.rb | A Ruby script that accepts one argument and passes it to a \
-regular expression matching method
-![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-3.png)
+regular expression matching method ![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/repetition-token-3.png)
 5-beginning_and_end.rb | A Ruby script that accepts one argument and passes it to a regular expression that must be exactly match a string that starts with h, ends by n, and can have any single character in between
 6-phone_number.rb | A Ruby scrip that accepts one argument and passes it to a regular expression that matches a 10 digit phone number
 7-OMG_WHY_ARE_YOU_SHOUTING.rb | A Ruby script that accepts one argument and passes it a regular expression that must only match capital letters
