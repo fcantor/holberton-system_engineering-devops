@@ -1,6 +1,6 @@
 # 0x07. Networking basics #0
 
-Concepts discussed in this projects:
+Concepts discussed in this project:
 - OSI model
 - What is a LAN
 - What is a WAN
