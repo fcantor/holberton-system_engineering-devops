@@ -10,9 +10,7 @@ This project introduces the use and mastery of Regular Expression in Ruby
 - The first line of all your Bash scripts should be exactly #!/usr/bin/env ruby
 - All your regex must be built for the Oniguruma library
 
----
-File | Task
----|---
+## Tasks
 file: ```0-simply_match_holberton.rb```
 A Ruby script that accepts one argument and passes it to a regular expression matching method 
 ![example](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/78/just-match-Holberton.png)
