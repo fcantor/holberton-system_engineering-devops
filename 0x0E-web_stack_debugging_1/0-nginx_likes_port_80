@@ -1,3 +1,5 @@
-#!/usr/bin/env bash                                                                                        # Script that enables nginx to list to port 80 
+#!/usr/bin/env bash
+# Script that enables nginx to list to port 80
+sudo service nginx stop
 ln -fs /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+sudo service nginx start
