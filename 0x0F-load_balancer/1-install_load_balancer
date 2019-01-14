@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Installs and configures HAproxy on load balancer
+sudo apt install -y haproxy=1.5\*
+file=/etc/haproxy/haproxy.cfg
+sudo echo -e "frontend haproxynode
+\tbind *:80
+\tmode http
+\tdefault_backend nodes" | sudo tee -a $file
+sudo echo -e "backend nodes
+\tmode http
+\tbalance roundrobin
+\toption forwardfor
+\thttp-request set-header X-Forwarded-Port %[dst_port]
+\tserver 368-web-01 35.231.160.140:80 check
+\tserver 368-web-02 35.231.83.167:80 check" | sudo tee -a $file
+sudo service haproxy restart
