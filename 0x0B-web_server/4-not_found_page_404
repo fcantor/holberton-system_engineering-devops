@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script that configures the nginx server to have a custom 404 page
+sudo apt-get -y update
+sudo apt-get -y install nginx
+ERROR="404.html"
+sudo echo "Ceci n'est pas une page" > $ERROR
+sudo mv $ERROR /usr/share/nginx/html/
+sudo sed -i "s/#error_page/error_page/" /etc/nginx/sites-available/default
+sudo service nginx restart
+sudo service nginx reload
