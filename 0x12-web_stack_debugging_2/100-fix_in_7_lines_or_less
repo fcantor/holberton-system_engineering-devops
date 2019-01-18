@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configures the container to run nginx user on port 8080
+pkill -f apache2
+chown -R nginx:nginx /etc/nginx/nginx.conf
+chmod 644 /etc/nginx/nginx.conf
+sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+sudo -u nginx service nginx restart
