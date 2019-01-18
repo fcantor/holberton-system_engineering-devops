@@ -1,8 +1,7 @@
 # 0x12. Web stack debugging #2
 
 <p align="center">
-  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonscho\
-ol-sysadmin_devops/287/99littlebugsinthecode-holberton.jpg" />
+  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/287/99littlebugsinthecode-holberton.jpg">
 </p>
 
 ---
