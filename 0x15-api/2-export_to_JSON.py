@@ -18,7 +18,7 @@ def to_json(employee_id):
         task_dict = {}
         task_dict['task'] = task.get('title')
         task_dict['completed'] = task.get('completed')
-        task_dict['username'] = task.get('name')
+        task_dict['username'] = users.get('name')
         task_list.append(task_dict)
     data = {}
     data[employee_id] = task_list
