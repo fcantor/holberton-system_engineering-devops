@@ -17,7 +17,7 @@ def to_csv(employee_id):
         writer = csv.writer(file, delimiter=',', quoting=csv.QUOTE_ALL)
         for task in todos:
             writer.writerow([employee_id,
-                             users.get('name'),
+                             users.get('username'),
                              task.get('completed'),
                              task.get('title')])
 
