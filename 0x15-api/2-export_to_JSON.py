@@ -22,8 +22,8 @@ def to_json(employee_id):
         task_list.append(task_dict)
     data = {}
     data[employee_id] = task_list
-    with open('{}.csv'.format(employee_id), 'w') as file:
-        file.write(json.dumps(data))
+    with open('{}.json'.format(employee_id), 'w') as file:
+        json.dump(data, file)
 
 
 if __name__ == "__main__":
