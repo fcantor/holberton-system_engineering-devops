@@ -5,7 +5,7 @@ from sys import argv
 import csv
 
 
-def get_data(employee_id):
+def to_csv(employee_id):
     """ Uses get to pull data and exports data in a CSV format """
     users = get("https://jsonplaceholder.typicode.com/users/" +
                 employee_id).json()
@@ -24,4 +24,4 @@ def get_data(employee_id):
 
 if __name__ == "__main__":
     if len(argv) > 1:
-        get_data(argv[1])
+        to_csv(argv[1])
