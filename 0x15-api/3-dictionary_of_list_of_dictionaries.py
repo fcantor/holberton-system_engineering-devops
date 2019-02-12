@@ -4,6 +4,7 @@ from requests import get
 from sys import argv
 import json
 
+
 def all_to_json():
     """ Uses get to pull data and exports data in a CSV format """
     users = get("https://jsonplaceholder.typicode.com/users/").json()
@@ -24,7 +25,7 @@ def all_to_json():
         task_dict['username'] = username_dict.get(employee_id)
         user_dict.get(employee_id).append(task_dict)
     with open('todo_all_employees.json', 'w') as file:
-         json.dump(user_dict, file)
+        json.dump(user_dict, file)
 
 
 if __name__ == "__main__":
