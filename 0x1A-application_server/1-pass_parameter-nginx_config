@@ -29,7 +29,7 @@ server {
 
 	location /airbnb-dynamic/ {
 		 include proxy_params;
-		 proxy_pass http://0.0.0.0:8001/number_odd_or_even/;
+		 proxy_pass http://127.0.0.1:8001/;
 	}
 
 	error_page 404 /custom_404.html;
