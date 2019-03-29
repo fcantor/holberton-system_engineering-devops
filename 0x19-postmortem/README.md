@@ -1,11 +1,11 @@
-Moove API Infrastructure Outage Incident Report
+# Moove API Infrastructure Outage Incident Report
 Tuesday, March 12, 2019
 
-ISSUE SUMMARY
+## ISSUE SUMMARY
 
 From 8:36 AM to 10:08 AM PT, requests to most Moove APIs resulted in 500 error response messages. Moove applications that rely on these APIs also returned errors or had reduced functionality. At its peak, the issue affected 100% of traffic to this API infrastructure. The root cause of this outage was an invalid configuration change that exposed a bug in a widely used internal library.
 
-TIMELINE (ALL TIMES PACIFIC TIME)
+## TIMELINE (ALL TIMES PACIFIC TIME)
 - 8:29 AM: Configuration push begins
 - 8:36 AM: Outage begins
 - 8:36 AM: Pagers alerted teams
@@ -14,11 +14,11 @@ TIMELINE (ALL TIMES PACIFIC TIME)
 - 9:29 AM: Server restarts begin
 - 10:08 AM: 100% of traffic back online
 
-ROOT CAUSE
+## ROOT CAUSE
 
 At 8:29 AM PT, a configuration change was inadvertently released to our production environment without first being released to the testing environment. The change specified an invalid address for the authentication servers in production. This exposed a bug in the authentication libraries which caused them to block permanently while attempting to resolve the invalid address to physical services. In addition, the internal monitoring systems permanently blocked on this call to the authentication library. The combination of the bug and configuration error quickly caused all of the serving threads to be consumed. Traffic was permanently queued waiting for a serving thread to become available. The servers began repeatedly hanging and restarting as they attempted to recover and at 8:36 AM PT, the service outage began.
 
-RESOLUTION AND RECOVERY
+## RESOLUTION AND RECOVERY
 
 At 8:36 AM PT, the monitoring systems alerted our engineers who investigated and quickly escalated the issue. By 8:33 AM, the incident response team identified that the monitoring system was exacerbating the problem caused by this bug.
 
@@ -26,7 +26,7 @@ At 9:04 AM, we attempted to rollback the problematic configuration change. This 
 
 Some jobs started to slowly recover, and we determined that the overall recovery would be faster by a restart of all of the API infrastructure servers globally. To help with the recovery, we turned off some of our monitoring systems which were triggering the bug. As a result, we decided to restart servers gradually (at 9:29 AM), to avoid possible cascading failures from a wide scale restart. By 9:59 AM, 25% of traffic was restored and 100% of traffic was routed to the API infrastructure at 10:08 AM.
 
-CORRECTIVE AND PREVENTATIVE MEASURES
+## CORRECTIVE AND PREVENTATIVE MEASURES
 
 In the last two days, we've conducted an internal review and analysis of the outage. The following are actions we are taking to address the underlying causes of the issue and to help prevent recurrence and improve response time:
 
