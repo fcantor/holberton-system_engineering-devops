@@ -1,7 +1,7 @@
 # 0x16. API advanced
 
 <p align="center">
-  <img srce="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/314/WIxXad8.png">
+  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/314/WIxXad8.png">
 </p>
 
 The purpose of this project is to learn the following concepts:
