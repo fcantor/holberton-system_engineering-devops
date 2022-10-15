@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir /tmp/holberton
+mkdir /tmp/0x00-shell_basics
